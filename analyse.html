@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Analyse side, hvor hele nettstedet blir analysert.">
+        <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+        <meta property="og:type"               content="article" />
+        <meta property="og:title"              content="When Great Minds Don’t Think Alike" />
+        <meta property="og:description"        content="How much does culture influence creative thinking?" />
+        <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Analyse av nettiden">
+        <meta name="twitter:description" content="På denne siden legger jeg frem resultatene av en analyse jeg har gjort av nettsiden min.">
+        <meta name="twitter:site" content="@WebEksamen">
+        <meta name="twitter:creator" content="@ymhope">
+        <meta name="twitter:image" content="bildebank/header.jpg">
+        <meta name="twitter:image:alt" content="Bilde av en kaffekopp og en PC på en pult">
+        <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="fontawesome/css/brands.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/solid.css">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="innholdssider.css">
+        <title>Analyse</title>
+    </head>
+    <body>
+        <div id="grid_container">
+            <header>
+                <h1 class="logo"><a href="index.html" class="logo_farge nostyle_link">Logo</a></h1>
+                <nav>
+                    <ul id="main-menu">
+                        <li class="lys_farge knapp"><a href="index.html"  class="logo_farge nostyle_link">Hjem</a></li>
+                        <li class="lys_farge knapp"><a href="uu_vs_seo.html"  class="logo_farge nostyle_link">UU vs SEO</a></li>
+                        <li class="lys_farge knapp"><a href="cms.html"  class="logo_farge nostyle_link">CMS</a></li>
+                        <li class="lys_farge knapp"><a href="analyse.html"  class="logo_farge nostyle_link">Analyse</a></li>
+                        <li class="lys_farge knapp"><a href="kontakt_oss.html"  class="logo_farge nostyle_link">Kontakt Oss</a></li>
+                    </ul>
+                    <ul class="desktop-meny">
+                        <li class="lys_farge knapp"><a href="index.html"  class="logo_farge nostyle_link">Hjem</a></li>
+                        <li class="lys_farge knapp"><a href="uu_vs_seo.html"  class="logo_farge nostyle_link">UU vs SEO</a></li>
+                        <li class="lys_farge knapp"><a href="cms.html"  class="logo_farge nostyle_link">CMS</a></li>
+                        <li class="lys_farge knapp"><a href="analyse.html"  class="logo_farge nostyle_link">Analyse</a></li>
+                        <li class="lys_farge knapp"><a href="kontakt_oss.html"  class="logo_farge nostyle_link">Kontakt Oss</a></li>
+                    </ul>
+                    <a href="#main-menu" id="ham-icon" class="logo_farge" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
+                </nav>
+            </header>
+
+            <main>
+                <h1>Analyse</h1>
+                <p>På denne siden legger jeg frem resultatene av en analyse jeg har gjort av nettsiden min. Jeg brukte Lighthouse for å analysere SEO og Accessibility elementene av siden min. På bakgrunn av funnene fra analysen har jeg utført endringer på siden min. Resultatene av analysen og endringene er illustrert i tabellen under.</p>
+                <img src="bildebank/artikkel3.jpg" alt="Bilde">
+                <h2>SEO feil og endringer</h2>
+                <p>Da jeg analyserte mobil-versjonen av siden min med Lighthouse fikk jeg en scort på 83 på SEO. Jeg fikk opp to elementer som maglet på siden min. Disse to var "Document does not have a meta description" og "Links are not crawlable".</p>
+                <ol>
+                    <li lang="en">"Document does not have a meta description"</li>
+                    <p>Denne feilen var tilstede på alle sidene til nettsiden min. Jeg fikset det ved å legge inn en meta tag med name="description" element og et content="" element hvor jeg beskrev siden. Dette er illustrert i tabellen under. Denne endringen ble gjort på alle sidene av nettsiden min. </p>
+                    <li lang="en">"Links are not crawlable"</li>
+                    <p>Denne feilen var tilstede på alle sidene til nettisiden min. Jeg fikset denne feilen ved å sette "return; false" i javascript(js) dokumentet mitt og sette href taggen til js i html dokumentet til å kalle på seg selv, altså #main-menu. Dette er illustrert i tabellen under. Denne endringen ble gjort på alle sidene av nettsiden min.</p>
+                </ol>
+                <h2>Valideringsfeil og mangler</h2>
+                <p>Jeg validerte alle filene for hver side hver for seg. Under ramser jeg opp alle feil og mangler som dukket opp ved validering.</p>
+                <h3>index.html filen</3>
+                <img src="bildebank/valideringindex.png" alt="Bidle av feil og mangler på inderx.html siden etter validering.">
+                <h3>uu_vs_seo.html filen</h3>
+                <img src="bildebank/valideringuu.png" alt="Bidle av feil og mangler på uu_vs_seo.html siden etter validering.">
+                <h3>cms.html filen</h3>
+                <img src="bildebank/valideringcms.png" alt="Bidle av feil og mangler på cms.html siden etter validering.">
+                <h3>analyse.html filen</h3>
+                <img src="bildebank/valideringanalyse.png" alt="Bidle av feil og mangler på analyse.html siden etter validering.">
+                <h3>kontakt_oss.html filen</h3>
+                <img src="bildebank/valideringkontakt.png" alt="Bidle av feil og mangler på kontakt_oss.html siden etter validering.">
+                <section id="tabell">
+                    <!--Alle bildene i tabellen er screenshots tatt av meg selv.-->
+                    <div class="kol to">
+                        <p class="øverst andrek">Før</p>
+                        <p class="rado"><img class="føretter" src="bildebank/fcrawler.png" alt="Bilde av hvordan koden var før endringer"></p>
+                        <p><img src="bildebank/fmeta.png" alt="Bilde av hvrdan koden var før endringer."></p>
+                        <p class="rado">Før bilde</p>
+                        <p>Før bilde</p>
+                        <p class="rado">Før bilde</p>
+                        <p>Før bilde</p>
+                    </div>
+                    <div class="kol tre">
+                        <p class="øverst tredjek">Etter</p>
+                        <p class="rado"><img class="føretter" src="bildebank/ecrawler.png" alt="Bilde av hvordan koden var etter endringer."> og <img src="bildebank/jsendring.png" alt="Bilde av endring"></p>
+                        <p><img src="bildebank/emeta.png" alt="Bilde av hvordan koden var etter endringer."></p>
+                        <p class="rado">Etter bilde</p>
+                        <p>Etter bilde</p>
+                        <p class="rado">Etter bilde</p>
+                        <p>Etter bilde</p>
+                    </div>
+                </section>
+                <h2>Tilgjengelighetserklæring</h2>
+                <p>Denne nettsiden har en tilgjengelighetserklæring. Dette er obligatorisk for alle nettsider fra og med dato 2023. For å se tilgjengelighetserklæringen til denne nettsiden <a href="tilgjengelighetserklæring.xlsx">klikk her.</a></p>
+                <h2>Konklusjon</h2>
+                <p>Etter at jeg utførte alle endringene som jeg har kommentert på og vist i tabellen fikk jeg en ny scor på 100 av Lighthouse på SEO.</p>
+            </main>
+            <footer class="lys_farge">
+                <div>
+                    <h3>Kontakt info</h3>
+                    <p>Tlf: 69 60 80 00<br>
+                    E-post: postmottak@hiof.no</p>
+                </div>
+            </footer>
+        </div>
+        <script src="ham.js"></script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Kontakt informasjon">
+        <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="fontawesome/css/brands.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/solid.css">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Kontakt Oss</title>
+    </head>
+    <body>
+        <div id="grid_container">
+            <header>
+                <h1 class="logo"><a href="index.html" class="logo_farge nostyle_link">Logo</a></h1>
+                <nav>
+                    <ul id="main-menu">
+                        <li class="lys_farge knapp"><a href="index.html"  class="logo_farge nostyle_link">Hjem</a></li>
+                        <li class="lys_farge knapp"><a href="uu_vs_seo.html"  class="logo_farge nostyle_link">UU vs SEO</a></li>
+                        <li class="lys_farge knapp"><a href="cms.html"  class="logo_farge nostyle_link">CMS</a></li>
+                        <li class="lys_farge knapp"><a href="analyse.html"  class="logo_farge nostyle_link">Analyse</a></li>
+                        <li class="lys_farge knapp"><a href="kontakt_oss.html"  class="logo_farge nostyle_link">Kontakt Oss</a></li>
+                    </ul>
+                    <ul class="desktop-meny">
+                        <li class="lys_farge knapp"><a href="index.html"  class="logo_farge nostyle_link">Hjem</a></li>
+                        <li class="lys_farge knapp"><a href="uu_vs_seo.html"  class="logo_farge nostyle_link">UU vs SEO</a></li>
+                        <li class="lys_farge knapp"><a href="cms.html"  class="logo_farge nostyle_link">CMS</a></li>
+                        <li class="lys_farge knapp"><a href="analyse.html"  class="logo_farge nostyle_link">Analyse</a></li>
+                        <li class="lys_farge knapp"><a href="kontakt_oss.html"  class="logo_farge nostyle_link">Kontakt Oss</a></li>
+                    </ul>
+                    <a href="#main-menu" id="ham-icon" class="logo_farge" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
+                </nav>
+            </header>
+
+            <main>
+                <h1>Kontakt oss</h1>
+                    <h3>Telefon og E-post</h3>
+                        <p><i class="fa-solid fa-phone"></i> 69 60 80 00</p>
+                        <p><i class="fa-solid fa-envelope"></i> postmottak@hiof.no</p>
+                    <h3>Postadresse</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Høgskolen i Østfold</p>
+                        <p>B R A veien 4</p>
+                        <p>NO-1757 Halden</p>
+                        <p>Norway</p>
+                    <h3>Kart</h3>
+                    <div class="kart"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882761207728!2d11.350614615705858!3d59.12925023409114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2s%C3%98stfold%20University%20College!5e0!3m2!1sen!2sno!4v1669946089556!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <h3>Kontaktskjema</h3>
+                    <!--Brukt koden som vi skrev i timen til skjemaet. Kilde: https://github.com/ackarlse/webutvikling2022/blob/main/kontaktskjema-servermiljo/contact/index.html-->
+                        <section>
+                            <form action="register.php" method="post">
+                                <label for="name">Navn: </label>
+                                <input type="text" name="name" id="name">
+                                <label for="age">Alder: </label>
+                                <input type="number" name="age" id="age">
+                                <label for="description">Beskrivelse: </label>
+                                <textarea name="description"></textarea>
+                                <button type="submit">Registrer</button>
+                            </form>
+                        </section>
+            </main>
+            <footer class="lys_farge">
+                <div>
+                    <h3>Kontakt info</h3>
+                    <p>Tlf: 69 60 80 00<br>
+                    E-post: postmottak@hiof.no</p>
+                </div>
+            </footer>
+        </div>
+        <script src="ham.js"></script>
+    </body>
+</html>

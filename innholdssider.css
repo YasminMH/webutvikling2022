@@ -1,0 +1,105 @@
+main{
+    max-width: 640px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.øverst{
+    background-color: #0D2C54;
+    color: white;
+}
+
+.texti{
+    font-size: 1.2rem;
+}
+
+#cmsbilde{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tabel2{
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr;
+}
+
+#tabel2 > div > p:first-child{
+    font-weight: bold;
+}
+
+#tabel2 > div > p{
+    margin: 0;
+    font-size: 1.2rem;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    height: 180px;
+}
+
+#tabel2 > div > p:nth-last-child(-n+4){
+    border-bottom: 1px solid black;
+}
+
+#tabell{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#tabell > div > p:first-child{
+    font-weight: bold;
+}
+
+#tabell > div > p{
+    margin: 0;
+    font-size: 1.2rem;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    height: 100px;
+}
+
+#tabell > div > p:nth-last-child(-n+3){
+    border-bottom: 1px solid black;
+}
+
+.rado{
+    background-color: lightblue;
+    color: black;
+}
+
+@media only screen and (max-width: 677px){
+    #tabell, #tabel2{
+    grid-template-areas: "kol1"
+                         "kol2"
+                         "kol3"
+                         "kol4";
+    grid-template-columns: 1fr;
+    }
+
+    .kol {
+       display: flex;
+       flex-direction: column;
+       flex-grow: 1;
+       width: 100%;
+    }
+
+    .en{
+        grid-area: "kol1";
+    }
+
+    .to{
+        grid-area: "kol2";
+    }
+
+    .tre{
+        grid-area: "kol3";
+    }
+
+    .fire{
+        grid-area: "kol4";
+    }
+
+}

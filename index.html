@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Forsiden til Webutviklingseksamenen min.">
+        <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="fontawesome/css/brands.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/solid.css">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Forside</title>
+    </head>
+    <body>
+        <div id="grid_container">
+            <header>
+                <h1 class="logo"><a href="index.html" class="logo_farge nostyle_link">Logo</a></h1>
+                <nav>
+                    <ul id="main-menu">
+                        <li class="lys_farge knapp"><a href="index.html"  class="logo_farge nostyle_link">Hjem</a></li>
+                        <li class="lys_farge knapp"><a href="uu_vs_seo.html"  class="logo_farge nostyle_link">UU vs SEO</a></li>
+                        <li class="lys_farge knapp"><a href="cms.html"  class="logo_farge nostyle_link">CMS</a></li>
+                        <li class="lys_farge knapp"><a href="analyse.html"  class="logo_farge nostyle_link">Analyse</a></li>
+                        <li class="lys_farge knapp"><a href="kontakt_oss.html"  class="logo_farge nostyle_link">Kontakt Oss</a></li>
+                    </ul>
+                    <ul class="desktop-meny">
+                        <li class="lys_farge knapp"><a href="index.html"  class="logo_farge nostyle_link">Hjem</a></li>
+                        <li class="lys_farge knapp"><a href="uu_vs_seo.html"  class="logo_farge nostyle_link">UU vs SEO</a></li>
+                        <li class="lys_farge knapp"><a href="cms.html"  class="logo_farge nostyle_link">CMS</a></li>
+                        <li class="lys_farge knapp"><a href="analyse.html"  class="logo_farge nostyle_link">Analyse</a></li>
+                        <li class="lys_farge knapp"><a href="kontakt_oss.html"  class="logo_farge nostyle_link">Kontakt Oss</a></li>
+                    </ul>
+                    <a href="#main-menu" id="ham-icon" class="logo_farge" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
+                </nav>
+            </header>
+
+            <main>
+                <section class="intro">
+                    <h1 class="logo_farge">Lucas Ipsum Dolor</h1>
+                    <p>Dantooine antilles organa hutt twi'lek boba watto. Jinn skywalker palpatine skywalker ben alderaan moff kit darth. Mon aayla calamari binks gonk c-3p0. Solo mustafar fett yoda grievous aayla. Moff darth sebulba endor. Wampa organa hutt vader.</p>
+                    <form action="kontakt_oss.html">
+                        <input class="lys_farge knapp" type="submit" value="Kontakt Oss">
+                    </form>
+                </section>
+                <h2>Artikkler</h2>
+                <section class="artikkel-boks">
+                    <article>
+                        <h2><a href='uu_vs_seo.html' class="logo_farge nostyle_link">UU vs SEO</a></h2>
+                        <img src="bildebank/daniel-ali-ju1yFZkrxVg-unsplash.jpg" alt="Bilde av vegg med skilt der det står: Accessible entry" class="artikkel-bilde">
+                        <p>Universell utforming og søkemotoroptimalisering er to begreper som ofte går hånd i hånd. Men hva betyr egentlig disse to begrepene, og hva er forskjellene mellom de?</p>
+                    </article>
+                    <article>
+                        <h2><a href='cms.html' class="logo_farge nostyle_link">CMS</a></h2>
+                        <img src="bildebank/souvik-banerjee--WPrNEM_6dg-unsplash.jpg" alt="Bilde av WordPress app" class="artikkel-bilde">
+                        <p>Et CMS er et system som gjør det enklere å lage interaktive digitale løsninger. Det å bruke et CMS til å lage nettsiden din kan føre til at mange aspekter med det å lage nettsiden blir gjort enklere.</p>
+                    </article>
+                    <article>
+                        <h2><a href='analyse.html' class="logo_farge nostyle_link">Analyse</a></h2>
+                        <img src="bildebank/artikkel3.jpg" alt="Immage of another thing" class="artikkel-bilde">
+                        <p>På denne siden legger jeg frem resultatene av en analyse jeg har gjort av nettsiden min. Jeg brukte Lighthouse for å analysere SEO elementene av siden min. Resultatene er illustrert i tabellen under.</p>
+                    </article>
+                </section>
+            </main>
+            <footer class="lys_farge">
+                <div>
+                    <h3>Kontakt info</h3>
+                    <p>Tlf: 69 60 80 00<br>
+                    E-post: postmottak@hiof.no</p>
+                </div>
+            </footer>
+        </div>
+        <script src="ham.js"></script>
+    </body>
+</html>
